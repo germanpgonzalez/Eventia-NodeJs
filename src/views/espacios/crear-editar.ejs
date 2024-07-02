@@ -21,6 +21,11 @@
     />
     <link rel="stylesheet" href="../css/error.css" />
     <title><%= tituloDePagina %></title>
+    <% if (tituloDePagina === 'Crear Nuevo Espacio') { %>
+  <link rel="stylesheet" href="../css/error.css" />
+<% } else { %>
+  <link rel="stylesheet" href="../../css/error.css" />
+<% } %>
     <style>
       form {
       margin-bottom: 20px;
@@ -138,7 +143,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  
 
     <footer>
       <div class="texto-footer">
