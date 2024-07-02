@@ -190,7 +190,7 @@ function validateForm() {
 
 // Función para cargar los tipos de eventos desde la API
 async function cargarTiposEventos() {
-  const response = await fetch("http://localhost:3000/api/obtenerTipoEvento");
+  const response = await fetch("api/obtenerTipoEvento");
   const data = await response.json();
 
   const selectTipo = document.getElementById("tipo");
