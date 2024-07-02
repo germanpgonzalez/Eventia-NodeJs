@@ -106,7 +106,7 @@ from eventos e, espacios esp where e.tipo_evento_id =esp.evento_id`;
       console.log(resultado);
 
       if (resultado && resultado.affectedRows > 0) {
-        res.redirect(`/espacios/editar/${resultado.insertId}`);
+        res.redirect(`/espacios`);
       } else {
         res.status(500).json({ error: "Error al crear el espacio" });
       }
