@@ -41,6 +41,7 @@
             <a class="nav-link" href="/nosotros">Nosotros</a>
             <a class="nav-link active" href="/eventos">Eventos</a>
             <a class="nav-link" href="/contacto">Contacto</a>
+            <a class="nav-link" href="/espacios">Espacios</a>
           </div>
         </div>
       </div>
@@ -162,7 +163,7 @@
         </div>
         <div>
           <form
-            action="https://formspree.io/f/xvoevaly"
+            action="/api/crearContacto"
             onsubmit="return validateForm()"
             method="POST"
           >
@@ -175,12 +176,7 @@
                 <input type="text" name="telefono" placeholder="Telefono" />
               </div>
               <div>
-                <select name="tipo" id="tipo">
-                  <option value="">Tipo de Evento</option>
-                  <option value="Cumpleaños">Cumpleaños</option>
-                  <option value="Bodas">Bodas</option>
-                  <option value="Eventos Sociales">Eventos Sociales</option>
-                </select>
+                <select name="tipo" id="tipo"></select>
               </div>
               <div>
                 <input type="date" name="fechaEvento" id="fechaEvento" />
@@ -193,9 +189,9 @@
               />
               <div>
                 <textarea
-                  name="mensaje"
+                  name="comentario"
                   rows="4"
-                  placeholder="Mensaje"
+                  placeholder="comentario"
                 ></textarea>
               </div>
 
@@ -233,6 +229,7 @@
             <a href="/nosotros">Nosotros</a>
             <a href="/eventos">Eventos</a>
             <a href="/contacto">Contacto</a>
+            <a href="/espacios">Espacios</a>
           </div>
         </div>
         <div class="seguinos-footer">
